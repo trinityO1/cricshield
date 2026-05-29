@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* CricShield Custom Animations */
+.cs-live-pulse {
+  animation: cs-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes cs-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .4;
+    transform: scale(1.15);
+  }
+}
+
+/* Premium Scrollbar for Over Timeline */
+.cs-scroll-premium {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.3) rgba(255, 255, 255, 0.02);
+}
+
+.cs-scroll-premium::-webkit-scrollbar {
+  height: 5px;
+}
+
+.cs-scroll-premium::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.cs-scroll-premium::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00E5FF 0%, #0088FF 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+.cs-scroll-premium::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #00E5FF 0%, #FFD700 100%);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
